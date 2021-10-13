@@ -13,6 +13,7 @@ public class DictionaryManagement {
     public void insertFromCommandline() {
         this.scan = new Scanner(System.in);
         int n = scan.nextInt();
+        scan.nextLine();
         for (int i = 0; i < n; i++) {
             String word_target = scan.nextLine();
             String word_explain = scan.nextLine();

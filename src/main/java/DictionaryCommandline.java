@@ -4,11 +4,14 @@ import java.util.Scanner;
 public class DictionaryCommandline {
     private  DictionaryManagement dicMan = new DictionaryManagement();
 
+
     public void showAllWords() {
         int m = 1;
         System.out.printf("%-5s %-20s %-20s", "No", "| English", "| Vietnamese");
+        System.out.println();
         for (Word i : dicMan.getDictionary().getWords()) {
             System.out.printf("%-5s %-20s %-20s", m, "| " + i.getWord_target(), "| " + i.getWord_explain());
+            System.out.println();
             ++m;
         }
     }
